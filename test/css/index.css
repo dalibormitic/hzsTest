@@ -8,6 +8,19 @@ header {
   
 }
 
+.icon {
+    position: relative;
+}
+
+.card {
+    transition: 0.3s;
+    border-radius: 15px; /* 5px rounded corners */
+}
+
+.card:hover {
+    box-shadow: 1px 10px 20px 0 rgba(21, 82, 67, 0.2);
+}
+
 .banner {
     background-image: url("../img/bannerGraffiti.jpg");
     -webkit-background-size: cover;
