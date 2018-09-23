@@ -1,0 +1,176 @@
+
+:root {
+  --neon-blue: #00ffa3;
+  --black: #1d1d1d;
+  --purple: #7952d8;
+}
+
+header {
+  
+}
+
+.section {
+    padding-top: 30px;
+}
+
+.icon {
+    position: relative;
+}
+
+.card {
+    padding: 3px;
+
+    transition: 0.3s;
+    border-radius: 15px; /* 5px rounded corners */
+}
+
+.card:hover {
+    box-shadow: 1px 10px 20px 0 rgba(21, 82, 67, 0.2);
+}
+
+.banner {
+    background-image: url("../img/bannerGraffiti.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    height: 40vw;
+}
+
+body {
+  background-color: var(--black);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: white;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 1px solid var(--neon-blue);
+    margin: 1px;
+    padding: 0;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.letter-spac-1 {
+    letter-spacing: 1px;
+}
+
+.letter-spac-3 {
+    letter-spacing: 3px;
+}
+
+.btn-color-custom {
+    background-color: var(--neon-blue);
+}
+
+.btn-text-color {
+    color: var(--black);
+}
+
+.navbar-fixed {
+    z-index: 999;
+}
+
+#blur1 {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+#blur1 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+#blur1:hover img {
+    filter: blur(2px) brightness(60%);
+}
+
+#blur1 :not(img) {
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    z-index: 1;
+    color: #fff;
+    width: 95%;
+    opacity: 0;
+    transition: .3s;
+}
+
+#blur1 h6 {
+    top: 60%;
+}
+
+#blur1:hover :not(img) {
+    opacity: 1;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .banner {
+        height: 110vw;
+    }
+    
+    .header {
+        font-size: 35px;
+        text-shadow: 3px 3px var(--black);
+        font-weight: 400;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .banner {
+        height: 90vw;
+    }
+    
+    .header {
+        font-size: 55px;
+        text-shadow: 3px 3px var(--black);
+        font-weight: 400;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .banner {
+        height: 80vw;
+    }
+    
+    .header {
+        font-size: 65px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .banner {
+        height: 70vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .banner {
+        height: 45vw;
+    }
+}
