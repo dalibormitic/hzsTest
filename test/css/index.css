@@ -1,3 +1,4 @@
+
 :root {
   --neon-blue: #00ffa3;
   --black: #1d1d1d;
@@ -8,11 +9,17 @@ header {
   
 }
 
+.section {
+    padding-top: 30px;
+}
+
 .icon {
     position: relative;
 }
 
 .card {
+    padding: 3px;
+
     transition: 0.3s;
     border-radius: 15px; /* 5px rounded corners */
 }
@@ -27,6 +34,8 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    width: 100vw;
+    height: 40vw;
 }
 
 body {
@@ -49,12 +58,6 @@ hr {
     margin: 1px;
     padding: 0;
 }
-
-
-@media (max-width: 600px){
-  
-}
-
 
 .icon-block {
   padding: 0 15px;
@@ -117,4 +120,57 @@ hr {
 
 #blur1:hover :not(img) {
     opacity: 1;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .banner {
+        height: 110vw;
+    }
+    
+    .header {
+        font-size: 35px;
+        text-shadow: 3px 3px var(--black);
+        font-weight: 400;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .banner {
+        height: 90vw;
+    }
+    
+    .header {
+        font-size: 55px;
+        text-shadow: 3px 3px var(--black);
+        font-weight: 400;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .banner {
+        height: 80vw;
+    }
+    
+    .header {
+        font-size: 65px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .banner {
+        height: 70vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .banner {
+        height: 45vw;
+    }
 }
