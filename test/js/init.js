@@ -7,6 +7,24 @@
             $('.sidenav').sidenav('close');
         });
 
+        $(window).load(function() {
+            
+            if ($(window).width() <= 600) {
+                $('.social').addClass('btn-small');
+            } else {
+                $('.social').removeClass('btn-small');
+            }
+            
+            $(window).resize(function () {
+            
+                if ($(window).width() <= 600) {
+                    $('.social').addClass('btn-small');
+                } else {
+                    $('.social').removeClass('btn-small');
+                }
+            });
+        });
+
     }); // end of document ready
 
 
