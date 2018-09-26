@@ -33,8 +33,9 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    width: 100vw;
-    height: 40vw;
+    text-align: center;
+    max-width: 98vw;
+border-bottom: 2px solid var(--neon-blue);
 }
 
 body {
