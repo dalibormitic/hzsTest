@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -15,29 +16,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.section {
-    padding-top: 30px;
-}
-
-#hzs {
-    position: relative;
-    margin-top: 1.4em;;
-    font-size: 4em;
-    letter-spacing: 1.3px;
-}
  
-#banner {
-    background-image: url("../img/bannerGraffiti.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
-    max-width: 98vw;
-border-bottom: 2px solid var(--neon-blue);
-}
-
 body {
   background-color: var(--black);
   display: flex;
@@ -49,6 +28,32 @@ body {
 main {
     flex: 1 0 auto;
 }
+
+#banner {
+    background-image: url("../img/bannerGraffiti.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    max-width: 98vw;
+    border-bottom: 2px solid var(--neon-blue);
+}
+
+/*
+.hzs {
+    font-size: 3em;
+    letter-spacing: 1.4vw ;
+}
+
+.slogan {
+    font-size: 16vw;
+}
+
+.button-tekst {
+    font-size: 16vw;
+}
+*/
 
 .card-styling {
     background-color: var(--black);
@@ -162,28 +167,22 @@ main {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #banner {
-        width: 95vw;
-        height: 110vw;
+        background-image: none;
     }
     
-    #hzs {
-        font-size: 3.2em;
-        text-shadow: 3.5px 3.5px var(--black);
-        font-weight: 400;
+    .hzs {
+        
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     #banner {
-        width: 96vw;
-        height: 80vw;
+        background-image: none;
     }
-    
-    h1 {
-        font-size: 1.2em;
-        text-shadow: 3px 3px var(--black);
-        font-weight: 400;
+        
+    .hzs {
+        
     }
 }
 
