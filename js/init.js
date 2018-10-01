@@ -17,9 +17,10 @@ $(function () {
         });
     });
     $('.scrollspy').scrollSpy();
+    $('.collapsible').collapsible();
+    $('.tooltipped').tooltip();
+    $('.tap-target').tapTarget();
 }); 
-
-
 
 // end of document ready
 
