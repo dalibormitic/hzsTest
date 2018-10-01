@@ -40,6 +40,14 @@ main {
     flex: 1 0 auto;
 }
 
+.nav-wrapper {
+    background-color: var(--black);
+}
+
+.navbar-fixed {
+    z-index: 999;
+}
+
 .card-styling {
     background-color: var(--black);
 }
@@ -86,9 +94,14 @@ main {
     color: var(--black);
 }
 
-.navbar-fixed {
-    z-index: 999;
+.collapsible-header {
+    background-color: var(--black);
 }
+
+.collapsible-body {
+    background-image: url("../img/faqstrelica.png");
+}
+
 
 #blur1 {
     text-align: center;
@@ -126,11 +139,13 @@ main {
     opacity: 1;
 }
 
+
 .rightSidebar {
     position: fixed;
     bottom: 0px;
     right: 0px;
 }
+
 #floatingCollection {
     border: 0px;
     border-radius: 0px;
