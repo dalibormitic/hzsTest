@@ -21,12 +21,10 @@
 </head>
 
 <body>
-    <header>
-      
+    <header>      
         <div class="navbar-fixed">
-          <nav class="pink accent-4" role="navigation">
-            <div class="nav-wrapper">
-                
+          <nav class="accent-4" role="navigation">
+            <div class="nav-wrapper">                
                 <ul class="right hide-on-med-and-down">
                     <li>
                         <a href="#OHAKATONU">O hakatonu</a>
@@ -67,8 +65,7 @@
                 </a>
             </div>
           </nav>
-        </div>
-      
+        </div>      
     </header>
 
     <div class="container" id="banner">
@@ -100,7 +97,7 @@
                                 <i class="material-icons">flash_on</i>
                             </h2>
 
-                            <h5 class="center">Hakaton???</h5>
+                            <h5 class="center">Šta je to hakaton?</h5>
 
                             <p class="light center pad-bot-2">Lorem ipsum dolor sit amet, sea in tota magna, errem delicatissimi pro id. Ea possit explicari
                                 intellegebat eum, eu sadipscing scribentur cum, no etiam labitur nec. Eos vitae dicunt ne,
@@ -150,17 +147,26 @@
     <!-- FAQ -->
 
     <section id="FAQ" class="container section scrollspy">
-            <div class="col s12 m12">
+            
                 <h3 style="font-size: 4vw;">FAQ</h3>
-                <p class="light">Lorem ipsum dolor sit amet, sea in tota magna, errem delicatissimi pro id. Ea possit explicari intellegebat
-                    eum, eu sadipscing scribentur cum, no etiam labitur nec. Eos vitae dicunt ne, ius putant detraxit reformidans
-                    id. Eu similique elaboraret has, eu velit error per, sit an postea oportere omittantur. Ne nec justo
-                    euripidis.</p>
-                <p class="light">Lorem ipsum dolor sit amet, sea in tota magna, errem delicatissimi pro id. Ea possit explicari intellegebat
-                    eum, eu sadipscing scribentur cum, no etiam labitur nec. Eos vitae dicunt ne, ius putant detraxit reformidans
-                    id. Eu similique elaboraret has, eu velit error per, sit an postea oportere omittantur. Ne nec justo
-                    euripidis.</p>
-            </div>
+                <ul class="collapsible popout">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">question_answer</i>Ko sve može da se prijavi?</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">question_answer</i>Gde i kada se održava takmičenje?</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">question_answer</i>Da li se učešće plaća?</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">question_answer</i>Da li je dozvoljeno korišćenje interneta?</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                </ul>
     </section>
 
     <!-- ORGANIZATORI -->
@@ -256,22 +262,22 @@
     <!--Floating ikonice za drustvene mreze-->
     <div class="rightSidebar">
             <ul class="collection" id="floatingCollection">
-                <li class="collection-item cItem">
+                <li class="collection-item cItem tooltipped" data-position="right" data-tooltip="FB">
                     <a href="https://www.facebook.com/fonis.rs/" class="waves-effect waves-light btn-floating social facebook" id="fb">
                     <i class="fa fa-facebook"></i></a>
                 </li>
-                <li class="collection-item cItem">
+                <li class="collection-item cItem tooltipped" data-position="right" data-tooltip="IG">
                     <a href="https://www.instagram.com/fonis_fon" class="waves-effect waves-light btn-floating social instagram ig" id="ig">
                     <i class="fa fa-instagram"></i></a>
                 </li>
-                <li class="collection-item cItem">
+                <li class="collection-item cItem tooltipped" data-position="right" data-tooltip="TW">
                     <a href="https://twitter.com/fonis_fon" class="waves-effect waves-light btn-floating social twitter tw" id="tw">
                     <i class="fa fa-twitter"></i></a>
                 </li>
             </ul>
     
-        </div>
-
+    </div>
+       
     <footer id="KONTAKT" class="page-footer teal">
         <div class="container">
             <div class="row">
@@ -296,7 +302,9 @@
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
+    <script src="js/materialize.min.js"></script>
     <script src="js/init.js"></script>
+    
 
 </body>
 
