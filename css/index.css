@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --neon-blue: #00ffa3;
+  --black: #1d1d1d;
+  --purple: #7952d8;
+}
+
+#hzs {
+    position: relative;
+    margin-top: 1.4em;;
+    font-size: 4em;
+    letter-spacing: 1.3px;
+}
+ 
+#banner {
+    background-image: url("../img/bannerGraffiti.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    max-width: 98vw;
+    border-bottom: 2px solid var(--neon-blue);
+}
+
+body {
+  background-color: var(--black);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: white;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.nav-wrapper {
+    background-color: var(--black);
+}
+
+.navbar-fixed {
+    z-index: 999;
+}
+
+.card-styling {
+    background-color: var(--black);
+}
+
+.pad-bot-2 {
+    padding-bottom: 2em;
+}
+
+.icon {
+    position: relative;
+}
+
+.card {
+    padding: 3px;
+
+    transition: 0.3s;
+    border-radius: 15px; /* 5px rounded corners */
+}
+
+.card:hover {
+    box-shadow: 0.1px 0.3px 0.3px 0 var(--neon-blue);
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.letter-spac-1 {
+    letter-spacing: 1px;
+}
+
+.letter-spac-3 {
+    letter-spacing: 3px;
+}
+
+.btn-color-custom {
+    background-color: var(--neon-blue);
+}
+
+.btn-text-color {
+    color: var(--black);
+}
+
+.collapsible-header {
+    background-color: var(--black);
+}
+
+.collapsible-body {
+    background-image: url("../img/faqstrelica.png");
+}
+
+
+#blur1 {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+#blur1 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+#blur1:hover img {
+    filter: blur(2px) brightness(60%);
+}
+
+#blur1 :not(img) {
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    z-index: 1;
+    color: #fff;
+    width: 95%;
+    opacity: 0;
+    transition: .3s;
+}
+
+#blur1 h6 {
+    top: 60%;
+}
+
+#blur1:hover :not(img) {
+    opacity: 1;
+}
+
+
+.rightSidebar {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+#floatingCollection {
+    border: 0px;
+    border-radius: 0px;
+}
+.cItem {
+    border-bottom: 0px !important;
+    background-color: transparent !important;
+}
+#fb {
+    background: #3B5998;
+}
+#tw {
+    background: #55ACEE;
+}
+#ig {
+    background: #517fa4;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #banner {
+        width: 95vw;
+        height: 110vw;
+    }
+    
+    #hzs {
+        font-size: 3.2em;
+        text-shadow: 3.5px 3.5px var(--black);
+        font-weight: 400;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #banner {
+        width: 96vw;
+        height: 80vw;
+    }
+    
+    h1 {
+        font-size: 1.2em;
+        text-shadow: 3px 3px var(--black);
+        font-weight: 400;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #banner {
+        width: 97.6vw;
+        height: 48vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #banner {
+        width: 98vw;
+        height: 50vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #banner {
+        width: 100vw;
+        height: 45vw;
+    }
+}
