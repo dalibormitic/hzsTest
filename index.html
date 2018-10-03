@@ -332,6 +332,10 @@
             </ul>
     
     </div>
+
+    <div id="map">
+        
+    </div>
        
     <footer id="KONTAKT" class="page-footer teal">
         <div class="container">
@@ -343,8 +347,7 @@
 
                 <div class="col l6 s12">
                     <p>Kako stići do nas?</p>
-                    <div id="map">
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -359,6 +362,17 @@
     <script src="js/materialize.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/init.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBThGdej9p6XHw9_4j3Q0h4utbNFp4I2w&callback=initMap">
+    </script>
+    <script>
+        function initMap() {
+		var location = {lat: 44.773, lng: 20.475};
+		var map = new google.maps.Map(
+			document.getElementById('map'), {zoom: 15, center: location});
+		var marker = new google.maps.Marker({position: location, map: map});
+	  }
+    </script>
     
 
 </body>
