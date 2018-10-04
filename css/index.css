@@ -141,6 +141,7 @@ main {
 
 
 .rightSidebar {
+    z-index: 1;
     position: fixed;
     bottom: 0px;
     right: 0px;
@@ -162,6 +163,11 @@ main {
 }
 #ig {
     background: #517fa4;
+}
+
+#map{
+    height: 400px;
+    width: 100%;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -316,9 +322,7 @@ main {
   .cd-timeline__img.cd-timeline__img--picture {
     background: var(--neon-blue);
   }
-  
-
-  
+    
   @media only screen and (min-width: 1170px) {
     .cd-timeline__img {
       width: 60px;
@@ -577,9 +581,6 @@ main {
     opacity: .8;
 }
 
-#map{
-  height: 400px;
-  width: 100%;
-}
+
 
   
