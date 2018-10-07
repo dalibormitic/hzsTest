@@ -10,11 +10,12 @@
   --purple: #7952d8;
 }
 
-#hzs {
+.hzs {
     position: relative;
     margin-top: 1.4em;;
-    font-size: 4em;
-    letter-spacing: 1.3px;
+    font-size: 7vmin;
+    text-align: center;
+    letter-spacing: 0.1em;
 }
  
 #banner {
@@ -27,6 +28,8 @@
     max-width: 98vw;
     border-bottom: 2px solid var(--neon-blue);
 }
+
+
 
 body {
   background-color: var(--black);
@@ -60,6 +63,10 @@ main {
     position: relative;
 }
 
+.card-icon {
+  color: var(--purple);
+}
+
 .card {
     padding: 3px;
 
@@ -67,8 +74,12 @@ main {
     border-radius: 15px; /* 5px rounded corners */
 }
 
-.card:hover {
+.card:hover, .card:active {
     box-shadow: 0.1px 0.3px 0.3px 0 var(--neon-blue);
+}
+
+.card-text {
+  line-height: 1.7em;
 }
 
 .icon-block {
@@ -100,8 +111,20 @@ main {
 
 .collapsible-body {
     background-image: url("../img/faqstrelica.png");
+    background-size: cover;
+    background-color: #1d1d1d;
 }
 
+#faq-text {
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  background-color: #1d1d1d;
+}
+
+.linkedin {
+  position: absolute;
+  top: 50px;
+}
 
 #blur1 {
     text-align: center;
@@ -138,7 +161,6 @@ main {
 #blur1:hover :not(img) {
     opacity: 1;
 }
-
 
 .rightSidebar {
     z-index: 1;
