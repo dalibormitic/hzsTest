@@ -600,7 +600,11 @@ main {
 }
 
 .radionice-slika{
-    opacity: .8;
+  opacity: .8;
+}
+
+.input-field > input, #textarea1, #textarea2{
+  color: #fff !important;
 }
 
 
