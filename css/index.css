@@ -214,6 +214,19 @@ main {
       font-weight: 500;
     }
 
+    .input-field > input, #textarea1, #textarea2{
+      font-size: 10px !important;
+    }
+
+    .prefix{
+      font-size: 20px !important;
+      top: 15px !important;
+    }
+
+    h1.end {
+      font-size: 15px !important;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -606,6 +619,26 @@ main {
 .input-field > input, #textarea1, #textarea2{
   color: #fff !important;
 }
+
+form.close {
+  height: 100px;
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: 0.8s ease-in-out;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0); 
+}
+
+h1.end {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  color: #fff;
+  opacity: 0;
+  transition: 0.8s ease-in-out; 
+  text-align: center;
+}
+
 
 
 

@@ -143,35 +143,49 @@
 
     <section class="container section scrollspy row" id="PRIJAVA">
         <h3 style="font-size: 4vw;">PRIJAVA</h3>
-        <form class="col s12">
+        <form class="col s12" name="submit-to-google-sheet" id="formaprijava">
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">stars</i>
+                    <input name="teamName" id="teamName" type="text" class="validate" required>
+                    <label for="teamName">Ime tima</label>
+                </div>
+            </div>
             <div class="row">
                 <h5>Član 1</h5>
                 <div class="input-field col s6">
-                    <input id="first_name1" type="text" class="validate" required>
-                    <label for="first_name1">Ime i prezime</label>
+                    <i class="material-icons prefix">account_circle</i>
+                    <input name="firstName1" id="firstName1" type="text" class="validate" required>
+                    <label for="firstName1">Ime i prezime</label>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="email1" type="email" class="validate" required>
+
+                        <i class="material-icons prefix">email</i>
+                        <input name="email1" id="email1" type="email" class="validate" required>
                         <label for="email1">Email</label>
                         <span class="helper-text" data-error="wrong" data-success="right"></span>
                     </div>
                 </div>
 
                 <div class="input-field col s6">
-                    <input id="number1" type="text" class="validate" required>
+                    <i class="material-icons prefix">phone</i>
+                    <input name="number1" id="number1" type="number" class="validate" required>
                     <label for="number1">Broj telefona</label>
                 </div>
 
                 <div class="input-field col s6">
-                    <input id="skola1" type="text" class="validate" required>
+
+                    <i class="material-icons prefix">school</i>
+                    <input name="skola1" id="skola1" type="text" class="validate" required>
                     <label for="skola1">Škola</label>
                 </div>
 
                 <div class="col s4"></div>
                 <div class="input-field col s4">
-                    <input id="razred1" type="text" class="validate" required>
+                    <i class="material-icons prefix">account_balance</i>
+                    <input name="razred1" id="razred1" type="text" class="validate" required>
                     <label for="razred1">Razred</label>
                 </div>
                 <div class="col s4"></div>
@@ -180,31 +194,41 @@
             <div class="row">
                 <h5>Član 2</h5>
                 <div class="input-field col s6">
-                    <input id="first_name2" type="text" class="validate" required>
-                    <label for="first_name2">Ime i prezime</label>
+
+                    <i class="material-icons prefix">account_circle</i>
+                    <input name="firstName2" id="firstName2" type="text" class="validate" required>
+                    <label for="firstName2">Ime i prezime</label>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="email2" type="email" class="validate" required>
+
+                        <i class="material-icons prefix">email</i>
+                        <input name="email2" id="email2" type="email" class="validate" required>
                         <label for="email2">Email</label>
                         <span class="helper-text" data-error="wrong" data-success="right"></span>
                     </div>
                 </div>
 
                 <div class="input-field col s6">
-                    <input id="number2" type="text" class="validate" required>
+
+                    <i class="material-icons prefix">phone</i>
+                    <input name="number2" id="number2" type="number" class="validate" required>
                     <label for="number2">Broj telefona</label>
                 </div>
 
                 <div class="input-field col s6">
-                    <input id="skola2" type="text" class="validate" required>
+
+                    <i class="material-icons prefix">school</i>
+                    <input name="skola2" id="skola2" type="text" class="validate" required>
                     <label for="skola2">Škola</label>
                 </div>
 
                 <div class="col s4"></div>
                 <div class="input-field col s4">
-                    <input id="razred2" type="text" class="validate" required>
+
+                    <i class="material-icons prefix">account_balance</i>
+                    <input name="razred2" id="razred2" type="text" class="validate" required>
                     <label for="razred2">Razred</label>
                 </div>
                 <div class="col s4"></div>
@@ -213,31 +237,41 @@
             <div class="row">
                 <h5>Član 3</h5>
                 <div class="input-field col s6">
-                    <input id="first_name3" type="text" class="validate" required>
-                    <label for="first_name3">Ime i prezime</label>
+
+                    <i class="material-icons prefix">account_circle</i>
+                    <input name="firstName3" id="firstName3" type="text" class="validate" required>
+                    <label for="firstName3">Ime i prezime</label>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="email3" type="email" class="validate" required>
+
+                        <i class="material-icons prefix">email</i>
+                        <input name="email3" id="email3" type="email" class="validate" required>
                         <label for="email3">Email</label>
                         <span class="helper-text" data-error="wrong" data-success="right"></span>
                     </div>
                 </div>
 
                 <div class="input-field col s6">
-                    <input id="number3" type="text" class="validate" required>
+
+                    <i class="material-icons prefix">phone</i>
+                    <input name="number3" id="number3" type="number" class="validate" required>
                     <label for="number3">Broj telefona</label>
                 </div>
 
                 <div class="input-field col s6">
-                    <input id="skola3" type="text" class="validate" required>
+
+                    <i class="material-icons prefix">school</i>
+                    <input name="skola3" id="skola3" type="text" class="validate" required>
                     <label for="skola3">Škola</label>
                 </div>
 
                 <div class="col s4"></div>
                 <div class="input-field col s4">
-                    <input id="razred3" type="text" class="validate" required>
+
+                    <i class="material-icons prefix">account_balance</i>
+                    <input name="razred3" id="razred3" type="text" class="validate" required>
                     <label for="razred3">Razred</label>
                 </div>
                 <div class="col s4"></div>
@@ -246,31 +280,41 @@
             <div class="row">
                 <h5>Član 4</h5>
                 <div class="input-field col s6">
-                    <input id="first_name4" type="text" class="validate" required>
-                    <label for="first_name4">Ime i prezime</label>
+
+                    <i class="material-icons prefix">account_circle</i>
+                    <input name="firstName4" id="firstName4" type="text" class="validate" required>
+                    <label for="firstName4">Ime i prezime</label>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="email4" type="email" class="validate" required>
+
+                        <i class="material-icons prefix">email</i>
+                        <input name="email4" id="email4" type="email" class="validate" required>
                         <label for="email4">Email</label>
                         <span class="helper-text" data-error="wrong" data-success="right"></span>
                     </div>
                 </div>
 
                 <div class="input-field col s6">
-                    <input id="number4" type="text" class="validate" required>
+
+                    <i class="material-icons prefix">phone</i>
+                    <input name="number4" id="number4" type="number" class="validate" required>
                     <label for="number4">Broj telefona</label>
                 </div>
 
                 <div class="input-field col s6">
-                    <input id="skola4" type="text" class="validate" required>
+
+                    <i class="material-icons prefix">school</i>
+                    <input name="skola4" id="skola4" type="text" class="validate" required>
                     <label for="skola4">Škola</label>
                 </div>
 
                 <div class="col s4"></div>
                 <div class="input-field col s4">
-                    <input id="razred4" type="text" class="validate" required>
+
+                    <i class="material-icons prefix">account_balance</i>
+                    <input name="razred4" id="razred4" type="text" class="validate" required>
                     <label for="razred4">Razred</label>
                 </div>
                 <div class="col s4"></div>
@@ -278,27 +322,29 @@
 
             <div class="row">
                 <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea" required></textarea>
+                    <i class="material-icons prefix">speaker_phone</i>
+                    <textarea name="textarea1" id="textarea1" class="materialize-textarea" required></textarea>
                     <label for="textarea1">Na koji način ste čuli za Hakaton za srednjoškolce?</label>
                 </div>
 
                 <div class="input-field col s12">
-                    <textarea id="textarea2" class="materialize-textarea" required></textarea>
+
+                    <i class="material-icons prefix">folder_special</i>
+                    <textarea name="textarea2" id="textarea2" class="materialize-textarea" required></textarea>
                     <label for="textarea2">Šta vaš tim razlikuje od drugih?</label>
                 </div>
-                    <p>
-                        <label>
-                            <input type="checkbox" class="filled-in" required />
-                            <span>Slažem se za korišćenje podataka.</span>
-                        </label>
-                </div>
-                
+                <p>
+                    <label>
+                        <input type="checkbox" class="filled-in" required />
+                        <span>Slažem se za korišćenje podataka.</span>
+                    </label>
+            </div>
 
-                <div class="center-align">
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Pošalji
-                        <i class="material-icons right">keyboard_arrow_right</i>
-                    </button>
-                </div>
+            <div class="center-align">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Pošalji
+                    <i class="material-icons right">keyboard_arrow_right</i>
+                </button>
+            </div>
             </div>
 
 
