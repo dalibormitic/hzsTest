@@ -114,6 +114,7 @@ $(function () {
 			form.parentElement.appendChild(h1);
 			setTimeout(() => h1.style.opacity = 1, 50);
 		}, 1000);
+		h1.scrollIntoView(true);
 	}
 
 
