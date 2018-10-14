@@ -108,13 +108,14 @@ $(function () {
 	function formComplete() {
 		const h1 = document.createElement('h1');
 		h1.classList.add('end');
+		var element = document.getElementById("zafokus");
 
 		h1.appendChild(document.createTextNode(`Vaša prijava je zabeležena. Uskoro ćemo vas kontaktirati o daljem procesu selekcije!`));
 		setTimeout(() => {
 			form.parentElement.appendChild(h1);
 			setTimeout(() => h1.style.opacity = 1, 50);
 		}, 1000);
-		h1.scrollIntoView(true);
+		element.scrollIntoView(true);
 	}
 
 
