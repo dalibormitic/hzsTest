@@ -627,6 +627,13 @@ h1.end {
   text-align: center;
 }
 
+#mailto a{
+  color: var(--neon-blue);
+}
+
+#mailto a:hover{
+  color: #fff;
+}
 
 
 
