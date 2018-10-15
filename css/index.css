@@ -99,19 +99,19 @@ main {
 }
 
 .collapsible-body {
-    background-image: url("../img/faqstrelica.png");
-    background-size: cover;
-    background-color: #1d1d1d;
+    background-image: url("../img/noBlur.png");
+    background-repeat: cover;
+    background-color: var(--black);
 }
 
 #faq-text {
   padding: 0.2rem;
   font-size: 1.2rem;
-  background-color: #1d1d1d;
+  background-color: var(--black);
 }
 
 .linkedin {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   z-index: 1;
 }
 
