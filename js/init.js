@@ -118,6 +118,19 @@ $(function () {
 		element.scrollIntoView(true);
 	}
 
+	const scriptURL2 = 'https://script.google.com/macros/s/AKfycbyVzu53rrwwEqxdTiOYcZw4ia5acwaINCdq5lDPqHm16e7uENw/exec'
+	const form2 = document.forms['email-newsletter']
+
+	form2.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL2, { method: 'POST', body: new FormData(form2) })
+			.then(response => console.log('Uspesno (newsletter)!', response))
+			.catch(error => console.error('Neuspesno (newsletter)!', error.message))
+		const element = document.getElementById("email-label").innerHTML = "Uspešna prijava na newsletter!"
+		document.getElementById("news").reset();
+
+	})
+
 
 });
 
