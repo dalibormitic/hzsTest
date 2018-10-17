@@ -270,7 +270,7 @@
                         <i class="material-icons prefix">email</i>
                         <input name="email1" id="email1" type="email" class="validate" required>
                         <label for="email1">Email</label>
-                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                        <span class="helper-text" data-error="greška" data-success="uspešno"></span>
                     </div>
                 </div>
 
@@ -308,7 +308,7 @@
                         <i class="material-icons prefix">email</i>
                         <input name="email2" id="email2" type="email" class="validate" required>
                         <label for="email2">Email</label>
-                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                        <span class="helper-text" data-error="greška" data-success="uspešno"></span>
                     </div>
                 </div>
 
@@ -346,7 +346,7 @@
                         <i class="material-icons prefix">email</i>
                         <input name="email3" id="email3" type="email" class="validate" required>
                         <label for="email3">Email</label>
-                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                        <span class="helper-text" data-error="greška" data-success="uspešno"></span>
                     </div>
                 </div>
 
@@ -384,7 +384,7 @@
                         <i class="material-icons prefix">email</i>
                         <input name="email4" id="email4" type="email" class="validate" required>
                         <label for="email4">Email</label>
-                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                        <span class="helper-text" data-error="greška" data-success="uspešno"></span>
                     </div>
                 </div>
 
@@ -571,7 +571,7 @@
                     </h4>
                     <h6 style="font-size: 1rem;">
                         Jelica Stanojević
-                    </h6>                    
+                    </h6>
                 </div>
             </div>
             <div class="col s12 m6 l4" id="blur1">
@@ -750,14 +750,20 @@
                     <h5 class="white-text">Prijavi se na FONIS newsletter!</h5>
                     <p class="grey-text text-lighten-4">Blagovremena obaveštenja o svim našim projektima u tvoj inboks!</p>
                 </div>
-                <div class="input-field col l6 m12 s12">
-                    <form>
-                        <i class="material-icons prefix">email</i>
-                        <input name="email3" id="email3" type="email" class="validate" required>
-                        <label for="email3">Email</label>
-                        <span class="helper-text" data-error="wrong" data-success="right"></span>
-                    </form>
-                </div>
+                <form name="email-newsletter" class="newsletter" id="news">
+                    <div class="row">
+                        <div class="input-field col l6 m12 s12 news-input">
+                            <i class="material-icons prefix">email</i>
+                            <input name="email" id="email" type="email" class="validate" required>
+                            <label for="email" id="email-label">Email</label>
+                            <span class="helper-text" data-error="greška" data-success="uspešno"></span>
+                            <div class="center-align">
+                                <button class="waves-effect waves-light btn-small button-newsletter" type="submit">PRIJAVI
+                                    SE NA NEWSLETTER</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
 

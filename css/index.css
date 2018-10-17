@@ -215,6 +215,15 @@ main {
       font-size: 15px !important;
     }
 
+    .news-input{
+      margin-top: 30px;
+      
+    }
+
+    .button-newsletter{
+      margin-top: 20px;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
