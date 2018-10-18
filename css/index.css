@@ -182,16 +182,28 @@ main {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #banner {
-        width: 95vw;
-        height: 110vw;
+  .banner {
+    border-bottom: 2px solid var(--neon-blue);
+  }
+
+  .slogan {
+    position: absolute;
+    animation: fallingSlogan 5s forwards;
+    background-color: rgba(29, 29, 29, 0.5);
+  }
+  
+  @keyframes fallingSlogan {
+    0% {
+      top: -2vw;
+    } 
+    100% {
+      top: 45vw;
     }
-    
-    #hzs {
-        font-size: 3.2em;
-        text-shadow: 3.5px 3.5px var(--black);
-        font-weight: 400;
-    }
+  }
+  
+.card-styling {
+  height: initial;;
+}
 
     #radionice-naziv{
         font-size: 1.2em;
@@ -228,40 +240,37 @@ main {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    #banner {
-        width: 96vw;
-        height: 80vw;
-    }
-    
-    h1 {
-        font-size: 1.2em;
-        text-shadow: 3px 3px var(--black);
-        font-weight: 400;
-    }
+  .card-styling {
+    height: 42rem;;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    text-shadow: 3px 3px var(--black);
+    font-weight: 400;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    #banner {
-        width: 97.6vw;
-        height: 48vw;
-    }
+  .card-styling {
+    height: 35rem;;
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    #banner {
-        width: 98vw;
-        height: 50vw;
-    }
+  .card-styling {
+    height: initial;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    #banner {
-        width: 100vw;
-        height: 45vw;
-    }
+  .card-styling {
+    height: 30rem;
+  }
     .radionice-text{
         font-size: 1.2em !important;
     }
@@ -293,6 +302,9 @@ main {
   }
   
   @media only screen and (min-width: 1170px) {
+    .card-styling {
+      height: 30rem;
+    }
     .cd-timeline {
       margin-top: 3em;
       margin-bottom: 3em;
@@ -462,6 +474,9 @@ main {
   }
   
   @media only screen and (min-width: 768px) {
+    .card-styling {
+      height: initial;;
+    }
     .cd-timeline__content h2 {
       font-size: 2rem;
     }
