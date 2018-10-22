@@ -20,6 +20,10 @@
     /*border-bottom: 2px solid var(--neon-blue);*/
 }
 
+.fonis-logo {
+  margin: 1.4rem;
+}
+
 .glitchSlogan .slogan {
   outline: none;
   font-size: 7vw;
@@ -36,7 +40,7 @@
   display: inline-block;
 }
 
-@-webkit-keyframes cray {
+@keyframes cray {
   2% {
     font-weight: 180;
     font-style: italic;
@@ -44,13 +48,13 @@
     text-transform: none;
   }
   4% {
-    font-weight: 80;
-    font-style: italic;
-    text-decoration: underline;
-    text-transform: capitalize;
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
   }
   6% {
-    font-weight: 600;
+    font-weight: 200;
     font-style: normal;
     text-decoration: none;
     text-transform: none;
@@ -69,22 +73,22 @@
     text-transform: lowercase;
   }
   16% {
-    font-weight: 700;
-    font-style: normal;
+    font-weight: 200;
+    font-style: italic;
     text-decoration: none;
-    text-transform: lowercase;
+    text-transform: none;
   }
   
   22% {
-    font-weight: 600;
-    font-style: normal;
+    font-weight: 200;
+    font-style: italic;
     text-decoration: none;
     text-transform: none;
   }
   24% {
-    font-weight: 500;
+    font-weight: 200;
     font-style: italic;
-    text-decoration: line-through;
+    text-decoration: none;
     text-transform: none;
   }
   26% {
@@ -120,35 +124,35 @@
   }
   
   44% {
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: underline;
-    text-transform: capitalize;
-  }
-  46% {
-    font-weight: 100;
-    font-style: normal;
-    text-decoration: line-through;
-    text-transform: none;
-  }
-  48% {
-    font-weight: 200;
+    font-weight: 700;
     font-style: normal;
     text-decoration: none;
-    text-transform: none;
+    text-transform: lowercase;
+  }
+  46% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  48% {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
   }
   
   54% {
-    font-weight: 200;
+    font-weight: 700;
     font-style: normal;
     text-decoration: none;
-    text-transform: none;
+    text-transform: lowercase;
   }
   56% {
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
-    text-transform: none;
+    text-transform: lowercase;
   }
   58% {
     font-weight: 700;
@@ -170,27 +174,27 @@
     text-transform: capitalize;
   }
   68% {
-    font-weight: 700;
-    font-style: normal;
+    font-weight: 400;
+    font-style: italic;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: none;
   }
   
   74% {
     font-weight: 400;
-    font-style: normal;
-    text-decoration: line-through;
+    font-style: italic;
+    text-decoration: none;
     text-transform: none;
   }
   76% {
-    font-weight: 500;
-    font-style: normal;
+    font-weight: 400;
+    font-style: italic;
     text-decoration: none;
     text-transform: none;
   }
   78% {
-    font-weight: 700;
-    font-style: normal;
+    font-weight: 400;
+    font-style: italic;
     text-decoration: none;
     text-transform: none;
   }
@@ -214,19 +218,20 @@
     text-transform: none;
   }
   90% {
-    font-weight: 500;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: none;
-  }
-  92% {
     font-weight: 700;
     font-style: normal;
     text-decoration: underline;
     text-transform: none;
   }
-  
-  98% {
+
+  91% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }  
+
+  100% {
     font-weight: 100;
     font-style: normal;
     text-decoration: none;
@@ -313,7 +318,7 @@ main {
 }
 
 .collapsible-body {
-    background-image: url("../img/noBlur.png");
+    background-image: url("../img/nuleIJedinice.png");
     background-repeat: cover;
     background-color: var(--black);
 }
@@ -401,10 +406,9 @@ main {
   } */
 
   .glitchSlogan .slogan {
-    font-size: 9vw;
+    font-size: 10vw;
   }
-  
-  
+    
   .card-styling {
     height: initial;
   }
@@ -445,7 +449,7 @@ main {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .card-styling {
-    height: 42rem;;
+    height: 38rem;
   }
 
   h1 {
@@ -458,7 +462,7 @@ main {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .card-styling {
-    height: 35rem;;
+    height: 32rem;;
   }
 
 }
@@ -466,7 +470,7 @@ main {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .card-styling {
-    height: initial;
+    height: 32rem;
   }
 }
 
@@ -506,9 +510,6 @@ main {
   }
   
   @media only screen and (min-width: 1170px) {
-    .card-styling {
-      height: 30rem;
-    }
     .cd-timeline {
       margin-top: 3em;
       margin-bottom: 3em;
@@ -678,9 +679,6 @@ main {
   }
   
   @media only screen and (min-width: 768px) {
-    .card-styling {
-      height: initial;;
-    }
     .cd-timeline__content h2 {
       font-size: 2rem;
     }
