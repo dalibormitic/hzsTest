@@ -131,8 +131,42 @@ $(function () {
 
 	})
 
+	var radio3 = document.getElementById("radio3");
+	var radio4 = document.getElementById("radio4");
 
+	var firstName4 = document.getElementById("firstName4");
+	var email4 = document.getElementById("email4");
+	var number4 = document.getElementById("number4");
+	var skola4 = document.getElementById("skola4");
+	var razred4 = document.getElementById("razred4");
+
+	radio4.addEventListener('click', function(){
+		document.getElementById("testtest").style.visibility = "visible";		
+		document.getElementById("testtest").style.display = "inline";
+		firstName4.required = true;
+		email4.required = true;
+		number4.required = true;
+		skola4.required = true;
+		razred4.required = true;
+	});
+
+	radio3.addEventListener('click', function(){
+		document.getElementById("testtest").style.visibility = "hidden";		
+		document.getElementById("testtest").style.display = "none";
+		firstName4.required = false;
+		email4.required = false;
+		number4.required = false;
+		skola4.required = false;
+		razred4.required = false;
+		firstName4.value = "";
+		email4.value = "";
+		number4.value = "";
+		skola4.value = "";
+		razred4.value = "";
+	});
 });
+
+
 
 // end of document ready
 
